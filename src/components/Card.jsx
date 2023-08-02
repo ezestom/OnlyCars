@@ -1,9 +1,10 @@
 import ferrari from "../img/ferrari.webp";
+import { Link } from "react-router-dom";
 
 export function Card() {
 	return (
 		<>
-			<a href="" className="ring-0 hover:ring-2 rounded-lg ring-yellow-400">
+			<Link to={"../description"} className="ring-0 hover:ring-2 rounded-lg ring-yellow-400">
 				<div className="flex flex-col items-center justify-center">
 					<div className="bg-white shadow-lg rounded-lg  p-4">
 						<div className="flex flex-col items-center justify-center">
@@ -71,7 +72,7 @@ export function Card() {
 						</div>
 					</div>
 				</div>
-			</a>
+			</Link>
 		</>
 	);
 }
