@@ -1,12 +1,12 @@
 import { Navbar } from "./Navbar";
-import ferrari from '../img/ferrari.webp'
+import ferrari from "../img/ferrari.webp";
 import { Footer } from "./Footer";
 
 export function SuperCard() {
 	return (
 		<>
 			<Navbar />
-			<div className="flex flex-col items-center justify-center pt-10">
+			<section className="flex flex-col items-center justify-center mt-20">
 				<div className="bg-white shadow-lg rounded-lg  p-4 max-w-xl">
 					<div className="flex flex-col items-center justify-center">
 						<img
@@ -16,10 +16,19 @@ export function SuperCard() {
 						/>
 						<div>
 							<p>
-								This is a super card Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Suscipit a veniam
-								tempore totam optio facere quaerat vel adipisci
-								fugiat et.
+								Ferrari is an Italian luxury sports car
+								manufacturer founded by Enzo Ferrari in 1939.
+								Known for its iconic red color, powerful
+								engines, and distinctive design, Ferrari has
+								become synonymous with high-performance sports
+								cars and is one of the most recognizable
+								automotive brands in the world. The companys
+								history is deeply rooted in motorsports, and it
+								has a rich racing heritage. Ferrari has competed
+								in various racing categories, including Formula
+								1, where it has achieved numerous victories and
+								championships, making it one of the most
+								successful teams in the sports history.
 							</p>
 						</div>
 
@@ -79,8 +88,10 @@ export function SuperCard() {
 						</div>
 					</div>
 				</div>
-			</div>
-         <Footer />
+			</section>
+
+
+			<Footer />
 		</>
 	);
 }
