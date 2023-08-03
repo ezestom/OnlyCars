@@ -14,11 +14,8 @@ export function Partner() {
 				<div role="list" className=" ">
 					<article className="">
 						<div className="">
-							<div className="">
-								{/* <img className="w-8 h-8 rounded-full" src="#" alt="Neil image"> */}
-							</div>
 							<div className=" grid place-content-center w-full">
-								<p className="text-sm  text-gray-900 dark:text-white">
+								<p className=" flex justify-center content-center text-l  text-gray-900 dark:text-white">
 									Benito Juares
 								</p>
 								<p className="text-sm flex content-center justify-center text-blue-600  dark:text-gray-400">
