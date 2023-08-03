@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 export function Card() {
 	return (
 		<>
-			<Link to={"../description"} className="ring-0 hover:ring-2 rounded-lg ring-yellow-400">
+			<Link
+				to={"../category"}
+				className="ring-0 hover:ring-2 rounded-lg ring-yellow-400">
 				<div className="flex flex-col items-center justify-center">
 					<div className="bg-white shadow-lg rounded-lg  p-4">
 						<div className="flex flex-col items-center justify-center">

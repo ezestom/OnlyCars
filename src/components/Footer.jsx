@@ -1,4 +1,4 @@
-import logo from '../img/logoTextoOnlyCars.png'
+import logo from '../img/logoOnlyCars.png'
 
 export function Footer(){
    return (
