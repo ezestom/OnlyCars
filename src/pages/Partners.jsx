@@ -8,7 +8,7 @@ export function Partners() {
 			{"../"}
 			<Navbar />
 
-			<section className=" flex justify-center content-center flex-wrap  w-screen">
+			<section className=" flex justify-center content-center flex-wrap h-full w-full">
 				<h1 className="text-4xl flex font-bold w-full text-gray-900 dark:text-white content-center justify-center underline">
 					Digital Partners
 					<img src={logo} alt="" className="w-20 pl-3" />

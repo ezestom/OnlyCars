@@ -28,7 +28,7 @@ export function Gallery() {
 	];
 
 	return (
-		<section>
+		<section className="shadow-lg rounded-gl p-5">
 			<article className="buttons-box">
 				<button
 					className="button buttonBack"
@@ -61,7 +61,7 @@ export function Gallery() {
 				</div>
 			</article>
 			<article>
-				<div className="flex items-center justify-center">
+				<div className="flex mt-5 items-center justify-center">
 					<svg
 						className="w-4 h-4 text-yellow-300 mr-1"
 						aria-hidden="true"
