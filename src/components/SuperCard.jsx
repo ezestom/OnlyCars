@@ -1,3 +1,4 @@
+import { FaArrowLeft } from "react-icons/fa";
 import { Navbar } from "./Navbar";
 import ferrari from "../img/ferrari.webp";
 import { Footer } from "./Footer";
@@ -7,7 +8,7 @@ export function SuperCard() {
 		<>
 			<Navbar />
 			<section className="flex flex-col items-center justify-center mt-20">
-				<div className="bg-white shadow-lg rounded-lg  p-4 max-w-xl">
+				<div className="bg-white shadow-lg rounded-lg p-4 max-w-xl">
 					<div className="flex flex-col items-center justify-center">
 						<img
 							className="w-full h-full rounded-lg"
@@ -88,8 +89,14 @@ export function SuperCard() {
 						</div>
 					</div>
 				</div>
+				<div className="absolute bottom-10 right-10">
+					<button
+						onClick={() => window.history.back()}
+						className="p-2 bg-gray-500 rounded-full text-white">
+						<FaArrowLeft size={20} />
+					</button>
+				</div>
 			</section>
-
 
 			<Footer />
 		</>

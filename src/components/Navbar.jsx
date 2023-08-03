@@ -53,7 +53,7 @@ export function Navbar() {
 								to={"../"}
 								className="flex items-center block py-2 pl-3 pr-4 text-white bg-orange-600 rounded md:bg-transparent md:text-orange-600 md:p-0 md:dark:text-orange-500"
 								aria-current="page">
-								<FiHome className="mr-2" />
+								<FiHome className="mr-1" />
 								Home
 							</Link>
 						</li>
@@ -61,7 +61,7 @@ export function Navbar() {
 							<Link
 								to={"./partners"}
 								className="flex items-center block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-								<FiUsers className="mr-2" />
+								<FiUsers className="mr-1" />
 								Partners
 							</Link>
 						</li>
@@ -69,16 +69,16 @@ export function Navbar() {
 							<a
 								href="#"
 								className="flex items-center block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-								<FiSliders className="mr-2" />
-								Services
+								<FiSliders className="mr-1" />
+								Category
 							</a>
 						</li>
 						<li>
 							<a
 								href="#"
 								className="flex items-center block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-								<FiMail className="mr-2" />
-								Contact
+								<FiMail className="mr-1" />
+								Recomendation
 							</a>
 						</li>
 					</ul>

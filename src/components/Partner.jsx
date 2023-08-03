@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export function Partner() {
 	return (
 		<section className="grid place-center">
-			<Link className="w-full  max-w-md bg-orange-100 border border-gray-200 hover:bg-blue-50 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+			<Link className="w-full  max-w-md border border-gray-200 hover:bg-blue-50 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
 				<div className="flex items-center text-xl text-blue-600 justify-center ">
 					<FaLinkedin />
 					<h5 className="text-xl font-bold  text-gray-900 dark:text-white">

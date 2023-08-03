@@ -1,5 +1,5 @@
 import { DateTime } from "./DateTime";
-import logo from '../img/logoOnlyCars.png'
+import logo from "../img/logoOnlyCars.png";
 
 export function Search() {
 	return (
@@ -30,20 +30,25 @@ export function Search() {
 					<input
 						type="search"
 						id="default-search"
-						className="min-w-[350px] block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 relative"
+						className="min-w-[200px] block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 relative"
 						placeholder="BMW, Audi, Mercedes Benz, Ferrari, Porche..."
 						required
 					/>
 					<button
 						type="submit"
-						className=" text-white absolute right-1 bottom-2.5 bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-						Search Your OnlyCar
+						className=" text-white absolute right-2.5 bottom-2.5 bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+						Search
 					</button>
 				</div>
 			</form>
-			<div className="border bg-yellow-50 border-yellow-500 rounded-full p-5  ">
+			<button
+				onClick={() => {
+					document.documentElement.classList.toggle("dark");
+				}}
+				className="border bg-yellow-50 border-yellow-500 rounded-full p-4  ">
+				<p className="text-yellow-500">Change theme</p>
 				<img src={logo} alt="logo" className="w-20" />
-			</div>
+			</button>
 			<DateTime />
 		</section>
 	);
