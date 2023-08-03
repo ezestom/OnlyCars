@@ -1,8 +1,67 @@
 import { Link } from "react-router-dom";
 import { FiHome, FiUsers, FiSliders, FiMail } from "react-icons/fi";
 import logo from "../img/logoTextoOnlyCars.png";
+import Swal from "sweetalert2";
 
 export function Navbar() {
+	function login() {
+		const { value: formValues } = Swal.fire({
+			title: "Login",
+			html:
+				'<input id="swal-input1" class="swal2-input" placeholder="Username">' +
+				'<input id="swal-input2" class="swal2-input" placeholder="Password">',
+
+			focusConfirm: true,
+			preConfirm: () => {
+				return [
+					document.getElementById("swal-input1").value,
+					document.getElementById("swal-input2").value,
+				];
+			},
+		});
+
+		if (formValues) {
+			Swal.fire(JSON.stringify(formValues));
+		}
+	}
+
+	function Register() {
+		const { value: formValues } = Swal.fire({
+			title: "Register",
+			html:
+				'<label for="swal-input1" class="sr-only">Username</label>' +
+				'<input id="swal-input1" class="swal2-input" placeholder="Username">' +
+				'<label for="swal-input2" class="sr-only">Password</label>' +
+				'<input id="swal-input2" class="swal2-input" placeholder="Password">' +
+				'<label for="swal-input3" class="sr-only">Email</label>' +
+				'<input id="swal-input3" class="swal2-input" placeholder="Email">' +
+				'<label for="swal-input4" class="sr-only">Phone</label>' +
+				'<input id="swal-input4" class="swal2-input" placeholder="Phone">' +
+				'<label for="swal-input5" class="sr-only">Address</label>' +
+				'<input id="swal-input5" class="swal2-input" placeholder="Address">' +
+				'<label for="swal-input6" class="sr-only">City</label>' +
+				'<input id="swal-input6" class="swal2-input" placeholder="City">' +
+				'<label for="swal-input7" class="sr-only">State</label>' +
+				'<input id="swal-input7" class="swal2-input" placeholder="State">' +
+				'<label for="swal-input8" class="sr-only">Zip</label>' +
+				'<input id="swal-input8" class="swal2-input" placeholder="Zip">' +
+				'<label for="swal-input9" class="sr-only">Country</label>' +
+				'<input id="swal-input9" class="swal2-input" placeholder="Country">',
+
+			focusConfirm: true,
+			preConfirm: () => {
+				return [
+					document.getElementById("swal-input1").value,
+					document.getElementById("swal-input2").value,
+				];
+			},
+		});
+
+		if (formValues) {
+			Swal.fire(JSON.stringify(formValues));
+		}
+	}
+
 	return (
 		<nav className="border-gray-200 dark:bg-gray-900 border fixed top-0 left-0 w-screen bg-white z-10">
 			<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -12,11 +71,17 @@ export function Navbar() {
 				</Link>
 				<div className="flex md:order-2">
 					<button
+						onClick={() => {
+							Register();
+						}}
 						type="button"
 						className="text-white bg-orange-600 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-1 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
 						Register
 					</button>
 					<button
+						onClick={() => {
+							login();
+						}}
 						type="button"
 						className="text-white bg-orange-600 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
 						Login

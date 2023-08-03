@@ -41,14 +41,9 @@ export function Search() {
 					</button>
 				</div>
 			</form>
-			<button
-				onClick={() => {
-					document.documentElement.classList.toggle("dark");
-				}}
-				className="border bg-yellow-50 border-yellow-500 rounded-full p-4  ">
-				<p className="text-yellow-500">Change theme</p>
+			<div className="border bg-yellow-50 border-yellow-500 rounded-full p-5  ">
 				<img src={logo} alt="logo" className="w-20" />
-			</button>
+			</div>
 			<DateTime />
 		</section>
 	);
